@@ -94,26 +94,26 @@ def download_file(url, file_name):
 
 def make_new_folder(content_type, use_new_folder, model_name, lora_old):
     if content_type == "Checkpoint":
-        folder = "/stable-diffusion-webui/models/Stable-diffusion"
-        new_folder = "/stable-diffusion-webui/models/Stable-diffusion/new"
+        folder = "/notebooks/stable-diffusion-webui/models/Stable-diffusion"
+        new_folder = "/notebooks/stable-diffusion-webui/models/Stable-diffusion/new"
     elif content_type == "Hypernetwork":
-        folder = "/stable-diffusion-webui/models/hypernetworks"
-        new_folder = "/stable-diffusion-webui/models/hypernetworks/new"
+        folder = "/notebooks/stable-diffusion-webui/models/hypernetworks"
+        new_folder = "/notebooks/stable-diffusion-webui/models/hypernetworks/new"
     elif content_type == "TextualInversion":
-        folder = "/stable-diffusion-webui/embeddings"
-        new_folder = "/stable-diffusion-webui/embeddings/new"
+        folder = "/notebooks/stable-diffusion-webui/embeddings"
+        new_folder = "/notebooks/stable-diffusion-webui/embeddings/new"
     elif content_type == "AestheticGradient":
-        folder = "/stable-diffusion-webui/extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings"
-        new_folder = "/stable-diffusion-webui/extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings/new"
+        folder = "/notebooks/stable-diffusion-webui/extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings"
+        new_folder = "/notebooks/stable-diffusion-webui/extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings/new"
     elif content_type == "VAE":
-        folder = "/stable-diffusion-webui/models/VAE"
-        new_folder = "/stable-diffusion-webui/models/VAE/new"
+        folder = "/notebooks/stable-diffusion-webui/models/VAE"
+        new_folder = "/notebooks/stable-diffusion-webui/models/VAE/new"
     elif content_type == "LORA":
-            folder = "/stable-diffusion-webui/models/Lora"
-            new_folder = "/stable-diffusion-webui/models/Lora/new"
+            folder = "/notebooks/stable-diffusion-webui/models/Lora"
+            new_folder = "/notebooks/stable-diffusion-webui/models/Lora/new"
     elif content_type == "LoCon":
-            folder = "/stable-diffusion-webui/models/Lora"
-            new_folder = "/stable-diffusion-webui/models/Lora/new"
+            folder = "/notebooks/stable-diffusion-webui/models/Lora"
+            new_folder = "/notebooks/stable-diffusion-webui/models/Lora/new"
     if content_type == "TextualInversion" or content_type == "VAE" or \
             content_type == "AestheticGradient":
         if use_new_folder:
