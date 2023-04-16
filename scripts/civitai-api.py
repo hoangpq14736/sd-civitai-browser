@@ -94,26 +94,26 @@ def download_file(url, file_name):
 
 def make_new_folder(content_type, use_new_folder, model_name, lora_old):
     if content_type == "Checkpoint":
-        folder = "models/Stable-diffusion"
-        new_folder = "models/Stable-diffusion/new"
+        folder = "/storage/models/Stable-diffusion"
+        new_folder = "/storage/models/Stable-diffusion/new"
     elif content_type == "Hypernetwork":
-        folder = "models/hypernetworks"
-        new_folder = "models/hypernetworks/new"
+        folder = "/storage/models/hypernetworks"
+        new_folder = "/storage/models/hypernetworks/new"
     elif content_type == "TextualInversion":
-        folder = "embeddings"
-        new_folder = "embeddings/new"
+        folder = "/storage/embeddings"
+        new_folder = "/storage/embeddings/new"
     elif content_type == "AestheticGradient":
-        folder = "extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings"
-        new_folder = "extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings/new"
+        folder = "/storage/extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings"
+        new_folder = "/storage/extensions/stable-diffusion-webui-aesthetic-gradients/aesthetic_embeddings/new"
     elif content_type == "VAE":
-        folder = "models/VAE"
-        new_folder = "models/VAE/new"
+        folder = "/storage/models/VAE"
+        new_folder = "/storage/models/VAE/new"
     elif content_type == "LORA":
-            folder = "models/Lora"
-            new_folder = "models/Lora/new"
+            folder = "/storage/models/Lora"
+            new_folder = "/storage/models/Lora/new"
     elif content_type == "LoCon":
-            folder = "models/Lora"
-            new_folder = "models/Lora/new"
+            folder = "/storage/models/Lora"
+            new_folder = "/storage/models/Lora/new"
     if content_type == "TextualInversion" or content_type == "VAE" or \
             content_type == "AestheticGradient":
         if use_new_folder:
